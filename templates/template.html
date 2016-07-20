@@ -1,0 +1,114 @@
+{% load i18n %}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" class="no-js">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    {% if not remove_meta_property %}
+      <meta property="og:title" content="{% trans "Eric Schlossberg" %}" />
+      <meta property="og:url" content="http://{{ request.META.HTTP_HOST }}{{ request.get_full_path }}" />
+      <meta property="og:type" content="music.musician" />
+      <meta property="og:site_name" content="{% trans "Eric Schlossberg" %} {% trans "Countertenor" %}"/>
+      <meta property="fb:admins" content="1110636" />
+    {% endif %}
+
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/themes/flick/jquery-ui.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="/media/css/template.css" type="text/css" media="all" />
+    {% block head-css %}{% endblock %}
+    <style>
+      body .ui-dialog .ui-dialog-title {
+        margin-top: -25px;
+      }
+    </style>
+
+    
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="/media/js/main.js"></script>
+    {% block head-js %}{% endblock %}
+    <title>{% trans "Eric Schlossberg" %} {% block title %}{% endblock %}</title>
+  </head>
+  
+  <body>
+    
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1&appId=106239566218188";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+    
+    <div id="black-bar-background">
+      <div id="black-bar">
+        <div class="content-container">
+          <div id="insta-side">
+            <div id="insta0">
+              <!img link="http://instagram.com/p/chk3i8ShMo/" class="used" height="101" width="101" src="http://distilleryimage4.s3.amazonaws.com/243c7856fbb411e2892d22000a1fb82c_5.jpg">
+            </div>
+          </div>
+          
+          <div id="titlename">
+            <a href="/" id="ericschlossberg">eric schlossberg</a> {% comment %}<a href="/" id="countertenor">{% trans "countertenor" %}{% endcomment %}</a>
+          </div>
+          <div id="menu">
+              <div class="link"><a href="/bio">{% trans "BIO" %}</a></div>
+              {% comment %}<div class="link"><a href="/media">{% trans "MEDIA" %}</a></div>{% endcomment %}
+              <div class="link"><a href="/photos">{% trans "PHOTOS" %}</a></div>
+              {% comment %}<div class="link"><a href="/resume">{% trans "RESUME" %}</a></div>{% endcomment %}
+              <!--<div class="link"><a target="_blank" href="http://www.opusatlas.com/eric-schlossberg#performances">{% trans "CALENDAR" %}</a></div>-->
+              <div class="link"><a href="/calendar">{% trans "CALENDAR" %}</a></div>
+              {% comment %}<div class="link"><a href="https://twitter.com/ericschlossberg" target="_blank">{% trans "TWEETS" %}</a></div>{% endcomment %}
+              <div class="link"><a href="/contact">{% trans "CONTACT" %}</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="content-container">
+      <div id="content">
+        <div id="main-img">
+          <img src="{% block main-img %}/media/img/eric-faded-white.jpg{% endblock %}"/>
+        </div>
+        <div id="white-box">
+            {% block main-information %}{% endblock %}
+        </div>
+      </div>
+      <div id="social-buttons">
+        {% include "mailchimp.html" %}
+        <div id="follow-button">
+          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+          <a href="https://twitter.com/ericschlossberg" class="twitter-follow-button" data-show-count="false" data-lang="en"></a>
+        </div>
+        <div id="like-button">
+          <div class="fb-like" data-href="https://www.facebook.com/eric.schlossberg" data-width="100" data-show-faces="true" data-send="false" data-colorscheme="light"></div>
+        </div>
+      </div>
+      
+      {% comment %}
+      <div id="translate">
+          <ul class="translate-menu">
+            <li><a href="http://www.ericschlossberg.com{{ request.get_full_path }}">English</a></li>
+            <li><a href="http://de.ericschlossberg.com{{ request.get_full_path }}">Deutsch</a></li>
+            <li><a href="http://fr.ericschlossberg.com{{ request.get_full_path }}">Fran&ccedil;ais</a></li>
+            <li><a href="http://it.ericschlossberg.com{{ request.get_full_path }}">Italiano</a></li>
+            {% comment %}
+            <li><a href="http://ru.ericschlossberg.com{{ request.get_full_path }}">&#1056;&#1091;&#1089;&#1089;&#1082;&#1080;&#1081;</a></li>
+            <li><a href="http://es.ericschlossberg.com{{ request.get_full_path }}">Espa&ntilde;ol</a></li>
+            <li><a href="http://zh-cn.ericschlossberg.com{{ request.get_full_path }}">&#31616;&#20307;&#23383;</a></li>
+            <li><a href="http://cs.ericschlossberg.com{{ request.get_full_path }}">&#268;esky</a></li>
+            <li><a href="http://ja.ericschlossberg.com{{ request.get_full_path }}">&#26085;&#26412;&#35486;</a></li>
+            <li><a href="http://nl.ericschlossberg.com{{ request.get_full_path }}">Nederlands</a></li>
+            <li><a href="http://sv.ericschlossberg.com{{ request.get_full_path }}">Svenska</a></li>
+          </ul>
+      </div>
+    {% endcomment %}
+      
+    </div>
+    
+    
+    <script async="" defer="" type="text/javascript" src="//static.opusatlas.com/js/plugins.js"></script>
+  </body>
+</html>

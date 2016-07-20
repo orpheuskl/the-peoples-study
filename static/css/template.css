@@ -1,0 +1,241 @@
+html {
+  background-color: #fff;
+  font-family: "Helvetica";
+}
+body {
+  margin: 0px;
+}
+
+.content-container {
+  width: 1000px;
+  margin-right: auto;
+  margin-left: auto;
+}
+#titlename {
+  margin-bottom: 2px;
+}
+#titlename a {
+  color: #5cc;
+  font-size: 40px;
+  text-decoration: none;
+}
+
+#ericschlossberg {
+  font-weight: 500;
+  cursor: pointer;
+}
+#countertenor {
+  font-weight: 100;
+  cursor: pointer;
+}
+#content, .content-half {
+  min-height: 525px;
+}
+#main-img {
+  float: left;
+  margin-left: -180px;
+}
+#main-img img {
+  height: 100%;
+  width: 100%;
+}
+#white-box {
+  width: 533px;
+  height: 100%;
+  float: left;
+  position: relative;
+  color: #333;
+  margin-bottom: 10px;
+}
+a.basiclink {
+  color: #35b2ec;
+  font-weight: 800;
+  cursor: pointer;
+  text-decoration: none;
+}
+.link a {
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 300;
+  cursor: pointer;
+  line-height: 15px;
+}
+#black-bar {
+  padding-top: 37px;
+}
+#black-bar-background {
+  background-color: #111;
+  height: 101px;
+  width: 100%;
+  min-width: 1000px;
+}
+#menu {
+  height: 15px;
+}
+#menu .link {
+  float: left;
+  margin-right: 64px;
+  text-transform: lowercase;
+}
+.content-title {
+  font-weight: 800;
+  font-size: 22px;
+  margin-top: 22px;
+  margin-bottom: 20px;
+  margin-left: 39px;
+  clear: both;
+}
+.content-half {
+}
+.content-full {
+  height: 90%;
+}
+.content {
+  padding-left: 40px;
+  font-weight: 100;
+  font-size: 12px;
+  line-height: 21px;
+  color: #333;
+}
+
+#insta {
+  float:left;
+  width: 200px;
+  margin-left: 20px;
+}
+
+
+#insta-side {
+  margin-top: -39px;
+  float: right;
+}
+#insta-side>div {
+  height: 101px;
+  width: 101px;
+  margin-bottom: 6px;
+  position: relative;
+}
+#insta-side>div img {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  cursor: pointer;
+}
+#insta-side>#insta1, #insta-side>#insta2 {
+  margin-bottom: 6px;
+}
+
+#social-buttons {
+}
+#follow-button, #like-button, #mc_embed_signup {
+  float: left;
+  margin-top: 5px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+/* scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+ 
+/* Track */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background-color: rgb(250, 250, 250);
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    /*background: rgba(255,0,0,0.8); */
+    /*-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); */
+    background-color: rgb(194, 194, 194);
+}
+::-webkit-scrollbar-thumb:window-inactive {
+	/*background: rgba(255,0,0,0.4); */
+}
+
+body .opusatlas-countainer {
+  margin-left: 380px;
+ }
+
+/* mailchimp */
+body #mc_embed_signup {
+  margin-left: 380px;
+  background-color: transparent;
+}
+body #mc_embed_signup .button#dialog-button, #mc-embedded-subscribe {
+  font-size: 11px;
+  font-family: "Helvetica";
+  height: 19px;
+  line-height: 20px;
+  margin: 0px 0px 0px 2px;
+  font-weight: 800;
+  color: black;
+  background-color: #e1e1e1;
+  clear: both;
+  border: 0 none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-block;
+  padding: 0 22px;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  width: auto;
+}
+body #mc_embed_signup .button#dialog-button:hover, #mc-embedded-subscribe:hover {
+  background-color: #aaa;
+}
+body #mc-embedded-subscribe {
+  margin-left: 90px;
+  height: 30px;
+  font-size: 14px;
+  margin-top: 10px;
+}
+#mce-EMAIL {
+  font-weight: 100;
+  margin-left: 40px;
+  text-align: center;
+}
+#mce-responses, .mce_inline_error {
+  font-size: 14px;
+}
+.mce_inline_error { text-align: center;}
+.ui-dialog-titlebar { height: 30px; }
+.center {
+  text-align: center;
+}
+.small-title {
+  font-size: 16px;
+}
+/*  translation  */
+#translate {
+  position: absolute;
+  margin-left: -140px;
+  /*top: 290px;*/
+  top: 490px;
+  width: 120px;
+  font-size: 12px;
+  text-align: right;
+  text-transform: lowercase;
+}
+#translate ul {
+  list-style: none;
+  padding: 5px;
+}
+#translate li {
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+#translate a {
+  color: #646464;
+  text-decoration: none;
+  text-shadow: none;
+}
+/*  translation  */

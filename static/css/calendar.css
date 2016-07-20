@@ -1,0 +1,44 @@
+.calendar-event {
+  margin-bottom: 20px;
+  clear: both;
+}
+.calendar-summary {
+  font-size: 20px;
+  font-weight: 800;
+  color: #5cc846;
+  text-transform: uppercase;
+  margin-left: 110px;
+}
+.calendar-moreinfo {
+  text-decoration: none;
+  cursor: pointer;
+  color: #35b2ec;
+  font-weight: 800;
+}
+.calendar-description {
+  margin-left: 110px;
+}
+.calendar-start {
+  float: left;
+  width: 100px;
+  margin-right: 10px;
+  margin-bottom: 50px;
+  line-height: 15px;
+}
+.calendar-location {
+  font-weight: 800;
+  margin-left: 110px;
+}
+.calendar-location a {
+  color: #35b2ec;
+  font-weight: 800;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.calendar-city {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 16px;
+  margin-top: 5px;
+}

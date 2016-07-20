@@ -1,0 +1,29 @@
+{% extends "template.html" %}
+{% load i18n %}
+
+{% block head-js %}
+    {% comment %}
+	<script src="http://twitter.com/javascripts/blogger.js" type="text/javascript"></script>
+	<script src="https://api.twitter.com/1/statuses/user_timeline.json?screen_name=ericschlossberg&count=5" type="text/javascript"></script>
+    {% endcomment %}
+{% endblock %}
+    
+{% block main-information %}
+
+  <div class="content-half">
+    <div class="content-title">{% trans "News" %}</div>
+    <div class="content">
+      {% trans "This summer Eric will travel to Suzhou, China to participate in the iSING! International Young Artists Festival." %}
+			<br/>
+			<br/>
+      {% trans "Eric's 2014/2015 season includes the roles of L'enfant in Ravel's L'enfant et les sortil&egrave;ges, Damon in Handel's Acis and Galatea, and Nerone in Monteverdi's L'incoronazione di Poppea." %}
+			<br/>
+			<br/>
+      {% trans "In August 2014," %} {% trans "Eric will be performing the roles of Cirilla and Morfeo in Cavalli's Gli amori d'Apollo e di Dafne with the Venice Opera Project." %}
+			<br/>
+			<br/>
+      {% trans "In July 2014," %} {% trans "Eric will be performing the role of Tolomeo in Handel's Giulio Cesare with the Hawaii Performing Arts Festival." %}
+    </div>
+  </div>
+
+{% endblock %}

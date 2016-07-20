@@ -1,0 +1,24 @@
+{% extends "template.html" %}
+
+{% block head-js %}
+  <script src="http://twitter.com/javascripts/blogger.js" type="text/javascript"></script>
+	<script src="https://api.twitter.com/1/statuses/user_timeline.json?screen_name=ericschlossberg&count=8" type="text/javascript"></script>
+{% endblock %}
+{% block head-css %}
+    {% load media %}
+    {% include_media 'tweets.css' %}
+{% endblock %}
+    
+{% block main-information %}
+	
+  <div class="content-half">
+		<!--<div id="insta">
+			<iframe src="http://snapwidget.com/in/?u=ZXJpY3NjaGxvc3NiZXJnfGlufDYwfDN8NHx8bm98NXxmYWRlT3V0" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:195px; height: 260px" ></iframe>
+		</div>-->
+    <div id="twitter">
+      <ul id="twitter_update_list">
+      </ul>
+    </div>
+		
+  </div>
+{% endblock %}

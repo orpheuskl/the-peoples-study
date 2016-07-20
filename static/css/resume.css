@@ -1,0 +1,92 @@
+#viewas {
+  text-align: center;
+  padding-bottom: 10px;
+}
+#viewas a {
+  font-size: 12px;
+  text-decoration: none;
+  color: #35b2ec;
+  font-weight: 800;
+}
+.content-title {
+  clear: left;
+}
+li {
+  clear: left;
+  list-style: none;
+  line-height: 13px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+li a {
+  text-decoration: none;
+  color: black;
+  text-shadow: 1px 1px #ffffcc;
+}
+.colA, .colB, .colC, .colD {
+  float: left;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-right: 5px;
+}
+.colA:nth-child(4), .colB:nth-child(4) {
+  margin-right: 0px;
+}
+ul li:nth-child(1) .colA {
+  margin-top: 0px;
+}
+ul {
+  margin-bottom: 60px;
+}
+.colA:nth-child(1) {
+  width: 15%;
+}
+.colA:nth-child(2) {
+  width: 35%;
+}
+.colA:nth-child(3) {
+  width: 40%;
+}
+.colA:nth-child(4) {
+  width: 5%;
+}
+.colB:nth-child(1) {
+  width: 17%;
+}
+.colB:nth-child(2) {
+  width: 33%;
+}
+.colB:nth-child(3) {
+  width: 40%;
+}
+.colB:nth-child(4) {
+  width: 5%;
+}
+.col3 {
+  width: 120px;
+  float: left;
+}
+h5 {
+  clear: left;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.col3 .content-title, .col3 .content {
+  padding-left: 0px;
+  margin-left: 0px;
+}
+.col3 .content {
+  padding-left: 1px;
+}
+.col3a {
+  margin-left: 39px;
+}
+.colC:nth-child(1), .colD:nth-child(1) {
+  width: 215px;
+}
+.colC:nth-child(2), .colD:nth-child(2) {
+  width: 90px;
+}
+.colC:nth-child(3), .colD:nth-child(3) {
+  width: 30px;
+}
